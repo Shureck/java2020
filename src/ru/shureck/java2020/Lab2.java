@@ -53,9 +53,11 @@ class Nersery{
         dogs = Arrays.copyOf(dogs, n);
     }
 
-    public void addDog(String name, int n){
-        dogs[pos] = new Dog(name, n);
-        pos++;
+    public void addDogs(int n){
+        for(int i=pos;i<n;i++) {
+            dogs[i] = new Dog(scanner.next(), scanner.nextInt());
+        }
+        pos += n;
     }
 
     @Override
@@ -70,7 +72,7 @@ public class Lab2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Nersery nersery = new Nersery(scanner.nextInt());
-        nersery.addDog("k",5);
+        nersery.addDogs(5);
         System.out.println(nersery);
         nersery.changeArrLen(scanner.nextInt());
         System.out.println(nersery);
