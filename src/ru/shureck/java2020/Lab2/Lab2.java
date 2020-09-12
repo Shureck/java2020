@@ -1,6 +1,5 @@
-package ru.shureck.java2020;
+package ru.shureck.java2020.Lab2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 

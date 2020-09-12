@@ -1,4 +1,4 @@
-package ru.shureck.java2020;
+package ru.shureck.java2020.Lab1;
 
 import java.util.ArrayList;
 import java.util.Collections;
